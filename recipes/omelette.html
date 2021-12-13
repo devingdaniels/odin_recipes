@@ -9,41 +9,169 @@
 
 </head>
 
+
+<style>
+    body {
+        background-color: rgb(230, 228, 116);
+        font-family: 'Courier New', Courier, monospace;
+        margin: 0;
+        font-weight: 300;
+    }
+    
+    h1 {
+        margin-top: 0;
+        font-family: cursive;
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    h2,
+    h3 {
+        text-align: center;
+        margin-top: 75px;
+        margin-bottom: 0;
+    }
+    
+    p {
+        text-align: center;
+        width: 600px;
+        margin: 25px auto 0 auto;
+        line-height: 45px;
+    }
+    
+    table {
+        border: solid 1px black;
+        margin: 10px auto 50px auto;
+    }
+    
+    td,
+    th {
+        padding: 10px 15px 5px 15px;
+    }
+    
+    ol {
+        line-height: 30px;
+        padding-top: 25px;
+        margin: 0 auto 0 auto;
+    }
+    
+    li {
+        margin-top: 25px;
+    }
+    
+    strong,
+    h4 {
+        font-size: small;
+    }
+    
+    .how-to-roll {
+        width: 1000px;
+        margin: 0 auto 20px auto;
+    }
+    
+    .omelette-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 400px;
+        width: 400px;
+    }
+    /* Button Animations */
+    
+    .menu-button {
+        padding: 5px 10px 5px 10px;
+        text-align: center;
+        font-size: 15px;
+        background-color: antiquewhite;
+        border-color: black;
+        font-weight: 900;
+    }
+    
+    .menu-button:hover {
+        background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+        animation: slidebg 5s linear infinite;
+        color: black;
+    }
+    
+    .button-center {
+        margin: auto;
+        width: max-content;
+        margin-bottom: 20px;
+    }
+    
+    @keyframes slidebg {
+        to {
+            background-position: 20vw;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+    }
+</style>
+
+<!--  -->
+
 <body>
     <section>
-        <h1>Omelette Recipe</h1>
-        <img src="../images/omelette.jpg" alt="Picture of a tasty looking omelette" height="400" width="400">
-        <h2> What is an Omelette?</h2>
-        <p> In cuisine, an omelette or omelet is a dish made from beaten eggs, fried with butter or oil in a frying pan (without stirring as in scrambled egg). It is quite common for the omelette to be folded around fillings such as chives, vegetables, mushrooms,
-            meat (often ham or bacon), cheese, or some combination of the above.
-        </p>
-        <h3>Ingredients</h3>
-        <ul>
-            <li>Boursin</li>
-            <li>Ricotta</li>
-            <li>Bacon</li>
-            <li>Thinly sliced steak</li>
-            <li>Grilled shrimp</li>
-            <li>Avocado</li>
-            <li>Caramelized onion</li>
-            <li>Cilantro</li>
-            <li>Pesto</li>
-        </ul>
+        <div>
+            <h1>Omelette Recipe</h1>
+            <img src="../images/omelette.jpg" alt="Picture of a tasty looking omelette" class="omelette-image">
+            <h2> What is an Omelette?</h2>
+            <p> In cuisine, an omelette or omelet is a dish made from beaten eggs, fried with butter or oil in a frying pan (without stirring as in scrambled egg). It is quite common for the omelette to be folded around fillings such as chives, vegetables,
+                mushrooms, meat (often ham or bacon), cheese, or some combination of the above.
+            </p>
+            <table style="border: 5px solid #990000; border-collapse: collapse">
+                <table>
+                    <tr>
+                        <th>Prep Time</th>
+                        <th>Cook Time</th>
+                        <th>Total Time</th>
+                        <th>Serves</th>
+                    </tr>
+                    <tr>
 
-        <h3>How to make an omelette in 5 easy steps</h3>
-        <ol>
-            <li> <strong> Beat the eggs:</strong>Use two or three eggs per omelette, depending on how hungry you are. Beat the eggs lightly with a fork.</li>
-            <li> <strong>Melt the butter:</strong>Use an 8-inch nonstick skillet for a 2-egg omelette, a 9-inch skillet for 3 eggs. Melt the butter over medium-low heat, and keep the temperature low and slow when cooking the eggs so the bottom doesn’t get
-                too brown or overcooked.</li>
-            <li> <strong>Add the eggs:</strong>Let the eggs sit for a minute, then use a heatproof silicone spatula to gently lift the cooked eggs from the edges of the pan. Tilt the pan to allow the uncooked eggs to flow to the edge of the pan.</li>
-            <li> <strong>Fill the omelette:</strong>Add the filling—but don’t overstuff the omelette—when the eggs begin to set. Cook for a few more seconds.</li>
-            <li> <strong>Fold and serve: </strong>Fold the omelette in half. Slide it onto a plate with the help of a silicone spatula. Enjoy 😋 </li>
+                        <td>25 mins.</td>
+                        <td>1 hr.</td>
+                        <td>1 hrs 25 mins</td>
+                        <td>4-6 servings</td>
+                    </tr>
+                </table>
+        </div>
 
 
-        </ol>
+        <div class="how-to-roll">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>Boursin</li>
+                <li>Ricotta</li>
+                <li>Bacon</li>
+                <li>Thinly sliced steak</li>
+                <li>Grilled shrimp</li>
+                <li>Avocado</li>
+                <li>Caramelized onion</li>
+                <li>Cilantro</li>
+                <li>Pesto</li>
+            </ul>
+            <h3>How to make an omelette in 5 easy steps</h3>
+            <ol>
+                <li> <strong> Beat the eggs:</strong>Use two or three eggs per omelette, depending on how hungry you are. Beat the eggs lightly with a fork.</li>
+                <li> <strong>Melt the butter:</strong>Use an 8-inch nonstick skillet for a 2-egg omelette, a 9-inch skillet for 3 eggs. Melt the butter over medium-low heat, and keep the temperature low and slow when cooking the eggs so the bottom doesn’t
+                    get too brown or overcooked.</li>
+                <li> <strong>Add the eggs:</strong>Let the eggs sit for a minute, then use a heatproof silicone spatula to gently lift the cooked eggs from the edges of the pan. Tilt the pan to allow the uncooked eggs to flow to the edge of the pan.</li>
+                <li> <strong>Fill the omelette:</strong>Add the filling—but don’t overstuff the omelette—when the eggs begin to set. Cook for a few more seconds.</li>
+                <li> <strong>Fold and serve: </strong>Fold the omelette in half. Slide it onto a plate with the help of a silicone spatula. Enjoy 😋 </li>
+
+
+            </ol>
+        </div>
 
     </section>
 
+    <div class="button-center">
+        <button class="menu-button"> <a href="../index.html" > Back to Recipe Menu</a></button>
+    </div>
 
 
 </body>

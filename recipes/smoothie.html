@@ -5,12 +5,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protein Smoothies</title>
+    <title>Protein Smoothie</title>
 
 </head>
 
-<body>
 
+<style>
+    body {
+        background-color: rgb(168, 121, 207);
+        font-family: 'Courier New', Courier, monospace;
+        margin: 0;
+        font-weight: 300;
+    }
+    
+    h1 {
+        margin-top: 0;
+        font-family: cursive;
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    h2,
+    h3 {
+        text-align: center;
+        margin-top: 75px;
+        margin-bottom: 0;
+    }
+    
+    p {
+        text-align: center;
+        width: 600px;
+        margin: 25px auto 0 auto;
+        line-height: 45px;
+    }
+    
+    table {
+        border: solid 1px black;
+        margin: 10px auto 50px auto;
+    }
+    
+    td,
+    th {
+        padding: 10px 15px 5px 15px;
+    }
+    
+    ul {
+        line-height: 30px;
+        padding-top: 25px;
+        margin: 0 auto 0 auto;
+    }
+    
+    li {
+        margin-top: 25px;
+    }
+    
+    strong,
+    h4 {
+        font-size: small;
+    }
+    
+    .how-to-roll {
+        width: 1000px;
+        margin: 0 auto 20px auto;
+    }
+    
+    .smoothie-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 400px;
+        width: 400px;
+    }
+    /* Button Animations */
+    
+    .menu-button {
+        padding: 5px 10px 5px 10px;
+        text-align: center;
+        font-size: 15px;
+        background-color: antiquewhite;
+        border-color: black;
+        font-weight: 900;
+    }
+    
+    .menu-button:hover {
+        background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+        animation: slidebg 5s linear infinite;
+        color: black;
+    }
+    
+    .button-center {
+        margin: auto;
+        width: max-content;
+        margin-bottom: 20px;
+    }
+    
+    @keyframes slidebg {
+        to {
+            background-position: 20vw;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+    }
+</style>
+
+<!--  -->
+
+<body>
+    <section>
+        <div>
+            <h1>Cinnamon Roll Recipe</h1>
+            <img src="../images/smoothie.jpg" alt="Picture of delicious smoothie" class="smoothie-image">
+            <h3>The Best Pre or Post Workout Smoothie on the Market</h3>
+            <p>Protein shakes (or protein smoothies) are a protein drink typically consumed before or after a workout in order to aid in muscle recovery. Protein shakes are usually made with frozen fruit/ice, a protein source such as protein powder, and
+                a liquid.</p>
+            <table style="border: 5px solid #990000; border-collapse: collapse">
+                <table>
+                    <tr>
+                        <th>Prep Time</th>
+                        <th>Blend time</th>
+                        <th>Total Time</th>
+                        <th>Serves</th>
+                    </tr>
+                    <tr>
+
+                        <td> &lt 5 mins</td>
+                        <td>2 mins</td>
+                        <td>10 mins</td>
+                        <td>1 muscle head</td>
+                    </tr>
+                </table>
+        </div>
+
+
+        <div class="how-to-roll">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>1 cup of Frozen Fruit</li>
+                <li>1 serving of Whey or Plant-based Protein</li>
+                <li>1 cup of Greek Yogurt</li>
+                <li>1 Banana</li>
+                <li>1 serving of CBD oil</li>
+
+            </ul>
+            <h3>How to make a Protein Smoothie in 55 Steps</h3>
+            <ul>
+
+                <li> <strong>Step 1:</strong>Start with a base of around 1 cup of ice or 1 cup of frozen fruit. My favorite base is frozen banana, but mixed berries are a close second. Add it right into your high-speed blender. </li>
+                <li> <strong>Step 2:</strong>Next, choose your protein source(s). We typically use multiple protein sources when making a protein shake. For example, you could do a serving of protein powder + a teaspoon of chia/flax seed + a tablespoon of
+                    nut butter. </li>
+                <li> <strong>Step 4:</strong> Now, decide if you’d like to add a sweetener. Depending on how sweet your protein powder is or what base fruit you used, you may not need to add one! If you are going to add one, we suggest an all-natural sweetener
+                    such as maple syrup or honey.</li>
+                <li> <strong>Step 5:</strong> Start with about 1/3 cup to 1/2 cup of liquid and add more from there. There’s nothing worse than a protein shake that’s too runny, so start conservatively. Feel free to use any liquid you like such as water, orange
+                    juice, almond milk, etc.
+                </li>
+                <li> <strong>Step 6:</strong>Now it’s time to blend it all up! The better the blender, the smoother your protein shake is going to be! If things are having a hard time “smoothing,” this means you need to add more liquid. </li>
+                <li> <strong>Step 7:</strong>Serve immediately. Enjoy! </li>
+
+
+            </ul>
+        </div>
+
+    </section>
+
+    <div class="button-center">
+        <button class="menu-button"> <a href="../index.html" > Back to Recipe Menu</a></button>
+    </div>
 
 
 </body>
