@@ -12,35 +12,67 @@
 
 <style>
     body {
-        margin: 0;
-        /* background-image: url(./images/cutting-board.jpg);
-        opacity: .5; */
-    }
-    
-    h1 {
-        margin: 0;
+        color: black;
+        font-weight: 600;
+        font-family: 'Courier New', Courier, monospace;
+        margin: 0 10% 0 10%;
+        background-image: url(./images/cutting-board.jpg);
     }
     
     table {
         margin: auto;
     }
     
-    .headerdiv {
-        background-color: cadetblue;
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        font-family: 'Courier New', Courier, monospace;
     }
     
-    .cinnamon-image {
-        height: 100px;
-        width: 100px;
+    h1 {
+        text-align: center;
+        font-family: cursive;
+        font-size: 120px;
+        margin-top: 0;
+        font-weight: 900;
+        color: rgb(80, 241, 80);
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+    
+    p {
+        line-height: 2em;
+    }
+    
+    button {
+        border: solid 5px black;
     }
     /* RECIPE CARDS WITH NO BOOTSTRAP */
+    
+    #row1 {
+        margin-top: 50px;
+    }
+    
+    #row2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
     
     .container {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        height: 100vh;
-        /* flex-wrap: no-wrap; */
+        flex-wrap: no-wrap;
+    }
+    
+    .container2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: no-wrap;
     }
     
     .container div {
@@ -49,16 +81,20 @@
         text-align: center;
     }
     
-    .cinnamon-card {
-        background: #4451c2;
+    .container2 div {
+        width: 50%;
+        height: max-content;
+        text-align: center;
     }
     
-    .cinnamon-card-content {
-        margin: auto;
+    .card-images {
+        height: 100px;
+        width: 100px;
     }
     
-    .omelette-card {
-        background-color: coral;
+    .recipe-card-contents {
+        margin: 0 30px 0 auto;
+        background-color: rgba(212, 218, 218, 0.8);
     }
     
     @media (max-width: 600px) {
@@ -67,6 +103,40 @@
         }
         .container div {
             width: 100%;
+        }
+        .container2 {
+            flex-direction: column;
+        }
+        .container2 div {
+            width: 100%;
+        }
+    }
+    /* Button Animations */
+    
+    .menu-button {
+        text-align: center;
+        font-size: 30px;
+        background-color: rgba(140, 150, 150, 0.8);
+        border-color: black;
+        font-weight: 900;
+        width: max-content;
+    }
+    
+    .menu-button:hover {
+        background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+        animation: slidebg 5s linear infinite;
+        color: black;
+    }
+    
+    .button-center {
+        margin: auto;
+        width: max-content;
+        margin: 20px auto 20px auto;
+    }
+    
+    @keyframes slidebg {
+        to {
+            background-position: 20vw;
         }
     }
 </style>
@@ -78,26 +148,78 @@
     </div>
 
 
-
-    <div class="container">
-        <div class="cinnamon-card">
-            <div class="cinnamon-card-content">
-                <img src="./images/cinnamonRolls.jpg" alt="Picture of tasty looking cinnamon rolls" class="cinnamon-image">
+    <div id="row1">
+        <div class="container">
+            <div class="recipe-card-contents">
                 <h3>Cinnamon Rolls</h3>
+                <img src="./images/cinnamonRolls.jpg" alt="Picture of tasty looking cinnamon rolls" class="card-images">
+
+                <p>Eam illum adipisci ad. Sed tractatos partiendo id, facete liberavisse ius an. At duo quis molestiae dissentiunt, ne mel brute.</p>
                 <table>
                     <tr>
                         <td> Score</td>
                         <td>⭐️⭐️⭐️⭐️</td>
                     </tr>
                 </table>
-                <a href="./recipes/cinnamonRolls.html">Recipe</a>
+                <div class="button-center">
+                    <button class="menu-button"> <a href="./recipes/cinnamonRolls.html" >Recipe</a></button>
+                </div>
+            </div>
+            <div class="recipe-card-contents">
+                <h3>Deluxe Omelette</h3>
+                <img src="./images/omelette.jpg" alt="Picture of tasty looking cinnamon rolls" class="card-images">
+                <p>Eam illum adipisci ad. Sed tractatos partiendo id, facete liberavisse ius an. At duo quis molestiae dissentiunt, ne mel brute.</p>
+                <table>
+                    <tr>
+                        <td> Score</td>
+                        <td>⭐️⭐️⭐️⭐️⭐️</td>
+                    </tr>
+                </table>
+                <div class="button-center">
+                    <button class="menu-button"> <a href="./recipes/omelette.html" >Recipe</a></button>
+                </div>
             </div>
         </div>
-        <div class="omelette-card">
-            <a href="./recipes/omelette.html">Omelette Recipe</a>
+    </div>
+    <div id="row2">
+        <div class="container2">
+
+            <div class="recipe-card-contents">
+                <h3>Protein Smoothie</h3>
+                <img src="./images/smoothie.jpg" alt="Picture of fruit smoothie" class="card-images">
+                <p>Eam illum adipisci ad. Sed tractatos partiendo id, facete liberavisse ius an. At duo quis molestiae dissentiunt, ne mel brute.</p>
+                <table>
+                    <tr>
+                        <td> Score</td>
+                        <td>⭐️⭐️⭐️⭐️⭐️</td>
+                    </tr>
+                </table>
+                <div class="button-center">
+                    <button class="menu-button"> <a href="./recipes/smoothie.html" >Recipe</a></button>
+                </div>
+            </div>
+
+
+            <div class="recipe-card-contents">
+                <h3>Burgundy Beef Stew</h3>
+                <img src="./images/beefStew.jpg" alt="Picture of pot of beef stew on the stove." class="card-images">
+                <p>Eam illum adipisci ad. Sed tractatos partiendo id, facete liberavisse ius an. At duo quis molestiae dissentiunt, ne mel brute.</p>
+                <table>
+                    <tr>
+                        <td> Score</td>
+                        <td>⭐️⭐️⭐️⭐️⭐️</td>
+                    </tr>
+                </table>
+                <div class="button-center">
+                    <button class="menu-button"> <a href="./recipes/beefstew.html" >Recipe</a></button>
+                </div>
+            </div>
+
 
         </div>
+
     </div>
+
 
 
     <!-- 
