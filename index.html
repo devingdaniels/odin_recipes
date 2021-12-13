@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website</title>
+
+</head>
+
+
+<style>
+    body {
+        margin: 0;
+        /* background-image: url(./images/cutting-board.jpg);
+        opacity: .5; */
+    }
+    
+    h1 {
+        margin: 0;
+    }
+    
+    table {
+        margin: auto;
+    }
+    
+    .headerdiv {
+        background-color: cadetblue;
+    }
+    
+    .cinnamon-image {
+        height: 100px;
+        width: 100px;
+    }
+    /* RECIPE CARDS WITH NO BOOTSTRAP */
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 100vh;
+        /* flex-wrap: no-wrap; */
+    }
+    
+    .container div {
+        width: 50%;
+        height: max-content;
+        text-align: center;
+    }
+    
+    .cinnamon-card {
+        background: #4451c2;
+    }
+    
+    .cinnamon-card-content {
+        margin: auto;
+    }
+    
+    .omelette-card {
+        background-color: coral;
+    }
+    
+    @media (max-width: 600px) {
+        .container {
+            flex-direction: column;
+        }
+        .container div {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="headerdiv">
+        <h1>Odin Recipes</h1>
+    </div>
+
+
+
+    <div class="container">
+        <div class="cinnamon-card">
+            <div class="cinnamon-card-content">
+                <img src="./images/cinnamonRolls.jpg" alt="Picture of tasty looking cinnamon rolls" class="cinnamon-image">
+                <h3>Cinnamon Rolls</h3>
+                <table>
+                    <tr>
+                        <td> Score</td>
+                        <td>⭐️⭐️⭐️⭐️</td>
+                    </tr>
+                </table>
+                <a href="./recipes/cinnamonRolls.html">Recipe</a>
+            </div>
+        </div>
+        <div class="omelette-card">
+            <a href="./recipes/omelette.html">Omelette Recipe</a>
+
+        </div>
+    </div>
+
+
+    <!-- 
+    <h2>Recipe links</h2>
+    <nav>
+        <ul>
+            <li></li>
+            <li></li>
+            <li>
+                <a href="./recipes/cranberryBrieBites.html">Cranberry Brie Bites</a>
+            </li>
+        </ul>
+    </nav>
+ -->
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+<!-- <div class="row">
+    <div class="column">
+        <div class="card">
+
+            <div class="container">
+
+                <h4><b>Cinnamon Rolls</b></h4>
+                <p>Architect & Engineer</p>
+                <a href="./recipes/cinnamonRolls.html">Cinnamon Rolls</a>
+            </div>
+
+        </div>
+    </div> -->
